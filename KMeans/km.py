@@ -64,7 +64,7 @@ class Kmeans:
 
 
 dataset=pd.read_csv('Mall_Customers.csv')
-X = dataset.iloc[:, [3,4]].values
+X = dataset.iloc[:, [3, 4]].values
 m=X.shape[0]
 n_iter=100
 K=5
@@ -81,3 +81,4 @@ plt.xlabel('Annual Income (k$)')
 plt.ylabel('Spending Score (1-100)')
 plt.legend()
 plt.show()
+
