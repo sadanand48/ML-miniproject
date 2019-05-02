@@ -64,7 +64,7 @@ class Kmeans:
 
 
 dataset=pd.read_csv('Mall_Customers.csv')
-X = dataset.iloc[:, [3,4]].values
+X = dataset.iloc[:, [2,4]].values
 m=X.shape[0]
 n_iter=100
 K=5
@@ -77,7 +77,7 @@ for k in range(K):
     plt.scatter(Output[k+1][:,0],Output[k+1][:,1],c=color[k],label=labels[k])
 plt.scatter(Centroids[:,0],Centroids[:,1],s=300,c='yellow',label='Centroids')
 plt.title('Clusters of customers')
-plt.xlabel('Annual Income (k$)')
+plt.xlabel('Age')
 plt.ylabel('Spending Score (1-100)')
 plt.legend()
 plt.show()
